@@ -79,3 +79,8 @@
 # Options for beeline
 # - SPARK_BEELINE_OPTS, to set config properties only for the beeline cli (e.g. "-Dx=y")
 # - SPARK_BEELINE_MEMORY, Memory for beeline (e.g. 1000M, 2G) (Default: 1G)
+
+#Options for python / when getting Python in worker has different version x.x than that in driver x.x, PySpark cannot run with different minor versions. Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set
+
+# export PYSPARK_PYTHON=/usr/bin/python3       
+# export PYSPARK_DRIVER_PYTHON=/usr/bin/python3   
